@@ -113,7 +113,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Jones & Wilkinson LTD - diecasters and toolmakers'
+    }
+  }
+}
 </script>
 
 <style>
@@ -229,7 +235,6 @@ section {
 .about {
   background: linear-gradient( rgba(255, 255, 255, 0.79), rgba(93, 117, 164, 0.67) ), url("~assets/img/plans.png");
   background-size: cover;
-  margin-bottom: 70px;
   padding-bottom: 50px;
 }
 .caption {
@@ -277,9 +282,6 @@ section {
   .service-summary:hover .read-more {
     display: block;
     color: #000000;
-  }
-  .about {
-    margin-bottom: 0px;
   }
   .about-wrapper {
     flex-direction: row;

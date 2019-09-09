@@ -31,7 +31,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Jones and Wilkinsin LTD - Diecast machining'
+    }
+  }
+}
 </script>
 
 <style>

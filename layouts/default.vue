@@ -9,7 +9,9 @@
           <a href="mailto:sales@jonesandwilkinson.co.uk">sales@jonesandwilkinson.co.uk</a>
           <a href="tel:+44 1922 475444">+44 1922 475444</a>
         </div>
-        <button>Get a quote</button>
+        <button @click="modalOpen('quote-modal')">
+          Get a quote
+        </button>
       </div>
     </div>
 
@@ -38,8 +40,59 @@
         <h4>VAT no. 100235836</h4>
       </div>
     </div>
+    <div id="quote-modal">
+      <div class="modal-content">
+        <h2>Please provide some details and we'll get in touch</h2>
+        <div class="modal-form">
+          <label for="name-field">
+            Name
+          </label>
+          <input id="name-field" type="text">
+
+          <label for="number-field">
+            Contact number
+          </label>
+          <input id="number-field" type="text">
+
+          <label for="email-field">
+            Email address
+          </label>
+          <input id="email-field" type="email">
+
+          <label for="info-field">
+            Quote information
+          </label>
+          <textarea id="info-field" />
+
+          <div class="button-wrapper">
+            <button @click="modalClose('quote-modal')">
+              Submit quote
+            </button>
+            <div class="cancel-btn" @click="modalClose('quote-modal')">
+              Cancel
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    modalOpen: (modalId) => {
+      document.getElementById(modalId).classList.add('open')
+      document.querySelector('body').classList.add('modal-open')
+    },
+    modalClose: (modalId) => {
+      document.getElementById(modalId).classList.remove('open')
+      document.querySelector('body').classList.remove('modal-open')
+    }
+  }
+}
+
+</script>
 
 <style>
 html {
@@ -73,6 +126,88 @@ h2 {
 p {
   font-size: 0.9rem;
   margin-bottom: 20px;
+}
+
+#quote-modal {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3c61a0;
+  justify-content: center;
+}
+
+#quote-modal.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.modal-content .label {
+  min-width: 200px;
+}
+
+.modal-content h2 {
+  max-width: 80vw;
+  margin-top: 20px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+.modal-form label {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 3px;
+  font-size: 1.4rem;
+}
+
+.modal-form textarea {
+  min-height: 30vh;
+}
+
+.modal-form .button-wrapper {
+  margin-top: 40px;
+  display: flex;
+}
+.modal-form button {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-form .cancel-btn {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow-y: hidden;
 }
 
 .header {
@@ -119,8 +254,6 @@ p {
   display: flex;
   font-size: 1rem;
   justify-content: space-around;
-  position: fixed;
-  bottom: 0;
 }
 .footer .address li {
   list-style: none;
@@ -165,6 +298,17 @@ section h2 {
     font-size: 1.6rem;
   }
 
+  .modal-form input {
+    max-width: 40vw;
+    align-self: flex-start;
+  }
+
+  .modal-form textarea,
+  .modal-form input {
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
@@ -207,7 +351,6 @@ section h2 {
     display: flex;
     font-size: 1.4rem;
     justify-content: space-around;
-    position: relative;
   }
   .footer .address li {
     list-style: none;
