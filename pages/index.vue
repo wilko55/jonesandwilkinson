@@ -572,7 +572,7 @@ export default {
     }
 
     .video-outer {
-      min-height: 500px;
+      min-height: 450px;
     }
 
     .floating-card-wrapper {
