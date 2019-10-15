@@ -23,12 +23,12 @@
             </div>
           </div>
         </div>
-        <video src="~assets/img/robot.mp4" muted></video>
+        <video src="~assets/img/robot.mp4" muted autoplay loop></video>
       </div>
     </div>
     <section>
       <div class="services-wrapper">
-        <a href="service1" class="floating-card-wrapper">
+        <a href="#" class="floating-card-wrapper">
           <div class="floating-card-contents">
             <div id="diecasting-service" class="card-image">
             </div>
@@ -41,7 +41,7 @@
           </div>
         </a>
 
-        <a href="service2" class="floating-card-wrapper">
+        <a href="#" class="floating-card-wrapper">
           <div class="floating-card-contents">
             <div id="toolmaking-service" class="card-image">
             </div>
@@ -54,7 +54,7 @@
           </div>
         </a>
 
-        <a href="example" class="floating-card-wrapper">
+        <a href="#" class="floating-card-wrapper">
           <div class="floating-card-contents">
             <div id="secondary-service" class="card-image">
             </div>
@@ -67,7 +67,7 @@
           </div>
         </a>
 
-        <a href="example" class="floating-card-wrapper">
+        <a href="#" class="floating-card-wrapper">
           <div class="floating-card-contents">
             <div id="assembly-service" class="card-image">
             </div>
