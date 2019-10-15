@@ -26,7 +26,7 @@
         <video src="~assets/img/robot.mp4" muted autoplay loop playsinline></video>
       </div>
     </div>
-    <section>
+    <section class="services">
       <div class="services-wrapper">
         <a href="#" class="floating-card-wrapper">
           <div class="floating-card-contents">
@@ -630,6 +630,10 @@ export default {
     .news-img-wrapper img {
       max-height: 100px;
       margin: 15px 0 10px 0;
+    }
+
+    section.services {
+      padding-bottom: 0;
     }
   }
 
