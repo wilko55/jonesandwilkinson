@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <video src="~assets/img/robot.mp4" muted autoplay loop></video>
+        <video src="~assets/img/robot.mp4" muted autoplay loop playsinline></video>
       </div>
     </div>
     <section>
