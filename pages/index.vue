@@ -8,13 +8,17 @@
           </div>
           <div class="contact-wrapper">
             <div class="contact-details">
-              <a class="contact-label" href="/contact">Contact us</a>
+              <a class="contact-label" hr ef="/contact">Contact us</a>
               <a href="mailto:sales@jonesandwilkinson.co.uk">sales@jonesandwilkinson.co.uk</a>
               <a href="tel:+44 1922 475444">+44 1922 475444</a>
             </div>
           </div>
-          <h2>Zinc Diecasting</h2>
-          <h2 class="italic">From concept to completion</h2>
+          <h2>
+            Zinc Diecasting
+           </h2>
+          <h2 class="italic">
+            From concept to completion
+          </h2>
           <div class="mobile-contact-wrapper">
             <div class="contact-details">
               <a class="contact-label" href="/contact">Contact us</a>
@@ -207,7 +211,7 @@ export default {
   }
 
   .title-wrapper h1 {
-    font-size: 2.5rem;
+    font-size: 6.5rem;
   }
 
   .title-wrapper h1 a {
@@ -634,6 +638,24 @@ export default {
 
     section.services {
       padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .video-wrapper video {
+      margin-top: -130px;
+    }
+
+    section.services {
+      margin: 0 100px;
+    }
+
+    .about-section .section-inner {
+      padding: 20px 100px;
+    }
+
+    .news-section {
+      margin: 20px 100px;
     }
   }
 

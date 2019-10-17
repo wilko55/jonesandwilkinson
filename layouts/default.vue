@@ -4,13 +4,14 @@
 
     <div class="footer">
       <div>
-        <h4>Jones&nbsp;&amp;&nbsp;Wilkinson&nbsp;LTD</h4>
+        <h4>Jones&nbsp;&amp;&nbsp;Wilkinson&nbsp;Ltd</h4>
         <ul class="address">
           <li>Ezekiel Lane</li>
           <li>Willenhall</li>
           <li>West Midlands</li>
           <li>WV12 5QU</li>
         </ul>
+        <a class="contact-link" href="#">Contact us</a>
       </div>
       <div>
         <h4>Policies</h4>
@@ -29,6 +30,7 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 html, body {
   margin: 0;
@@ -76,6 +78,18 @@ p {
 .footer a {
   color: white;
   text-decoration: none;
+}
+
+.footer ul {
+  padding-left: 20px;
+}
+
+.footer .contact-link {
+  font-weight: 700;
+  margin-top: 10px;
+  padding-left: 20px;
+  display: block;
+  text-decoration: underline;
 }
 
 @media (min-width: 400px) {
