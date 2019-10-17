@@ -30,8 +30,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-
 html, body {
   margin: 0;
   padding: 0;
