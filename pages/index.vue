@@ -15,7 +15,7 @@
           </div>
           <h2>
             Zinc Diecasting
-           </h2>
+          </h2>
           <h2 class="italic">
             From concept to completion
           </h2>
