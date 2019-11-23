@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/css/main.css" rel="stylesheet">
+  <title>Jones & Wilkinson Ltd</title>
+  <script>
+    window.utils = window.utils || {
+      toggleMenu: function() {
+        var sidenav = document.getElementById('sidenav');
+        if (sidenav) {
+          sidenav.classList.toggle('collapsed');
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="content">
+      {{> sidenav }}
+      {{{body}}}
+    <div class="footer">
+      <div>
+        <h4>Jones&nbsp;&amp;&nbsp;Wilkinson&nbsp;Ltd</h4>
+        <ul class="address">
+          <li>Ezekiel Lane</li>
+          <li>Willenhall</li>
+          <li>West Midlands</li>
+          <li>WV12 5QU</li>
+        </ul>
+        <a class="contact-link" href="/contact">Contact us</a>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><a target="_blank" href="/files/Data-Protection-Policy-V1.18.pdf">Data Protection Policy</a></li>
+          <li><a target="_blank" href="/files/Privacy-Notice-V1.18.pdf">Privacy Notice</a></li>
+          <li><a target="_blank" href="/files/Anti-slavery-and-human-trafficking-policy.pdf">Anti slavery and human trafficking policy</a></li>
+          <li><a target="_blank" href="/files/Terms-and-Conditions-for-Sale-of-Goods-March-2015.pdf">Terms and conditions</a></li>
+        </ul>
+        <div class="show-mobile">
+          <h4>VAT no. 100235836</h4>
+        </div>
+      </div>
+      <div class="hide-mobile">
+        <h4>VAT no. 100235836</h4>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

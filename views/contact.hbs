@@ -1,0 +1,58 @@
+<div>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    {{> subheader title="Contact"}}
+
+    <section>
+      <div class="contact-section-wrapper">
+        <div class="section-text">
+          <div class="contact-section">
+            <p class="accent">Post</p>
+            <div class="details">
+              <span><strong>Jones & Wilkinson LTD</strong></span><br>
+              <span>Ezekiel Lane,</span><br>
+              <span>Willenhall,</span><br>
+              <span>West Midlands</span><br>
+              <span>WV12 5QU</span><br>
+            </div>
+          </div>
+
+          <div class="contact-section">
+            <p class="accent">Email</p>
+            <div class="details">
+              <span><a href="mailto:sales@jonesandwilkinson.co.uk">sales@jonesandwilkinson.co.uk</a></span>
+            </div>
+          </div>
+
+          <div class="contact-section">
+            <p class="accent">Phone</p>
+            <div class="details">
+              <span><a href="tel:+441988475444">(+44)1922 475444</a></span>
+            </div>
+          </div>
+
+          <div class="contact-section">
+            <p class="accent">Fax</p>
+            <div class="details">
+              <span><a href="fax:+441922475444">(+44)1922 475444</a></span>
+            </div>
+          </div>
+        </div>
+        <div id="map-wrap">
+        </div>
+      </div>
+    </section>
+    <script>
+      var mymap = L.map('map-wrap').setView([52.602773, -2.040124], 16);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(mymap);
+      var marker = L.marker([52.602773, -2.040124]).addTo(mymap);
+      marker.bindPopup("<strong>Jones & Wilkinson Ltd</strong><br>Ezekiel Lane<br>Willenhall<br>West Midlands<br>WV12 5QU`").openPopup();
+
+    </script>
+  </div>
