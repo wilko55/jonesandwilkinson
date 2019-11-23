@@ -40,6 +40,10 @@ a {
   color: #0b7bf2;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .footer {
   background-color: #4e5d78;
   padding: 10px;
