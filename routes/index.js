@@ -20,7 +20,6 @@ router.get('/', (req, res, next) => {
       }
     })
 
-    console.log(latestPosts)
 
     res.render('home', {
       layout: 'main',
