@@ -136,14 +136,18 @@ video {
   min-height: 55vw;
 }
 
-.title-wrapper {
+.title-wrapper .menu-icon {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 15px;
+  left: 2px;
+  z-index: 9999;
 }
 
 .title-wrapper h1 {
   font-size: 2.5rem;
+  position: absolute;
+  top: 10px;
+  left: 35px;
 }
 
 .title-wrapper h1 a {
@@ -253,7 +257,7 @@ section h3 {
 }
 
 #diecasting-service {
-  background-image: url(/img/machine-1.png);
+  background-image: url(/img/diecasting-1.png);
 }
 
 #toolmaking-service {
@@ -261,7 +265,7 @@ section h3 {
 }
 
 #secondary-service {
-  background-image: url(/img/tapping.png);
+  background-image: url(/img/clip-tool.png);
 }
 
 #assembly-service {
@@ -460,6 +464,10 @@ section.news-section h2 {
 }
 
 @media (min-width: 400px) {
+  .title-wrapper .menu-icon {
+    top: 5px;
+  }
+
   .title-wrapper h1 {
     margin-top: 10px;
     font-size: 2.5rem;
@@ -873,7 +881,8 @@ section.news-section h2 {
 
 .service-content {
   img {
-    width: 300px;
+    width: 266px;
+    height: 200px;
   }
 }
 
@@ -891,6 +900,14 @@ section.news-section h2 {
   display: none;
 }
 
+.caption {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #434343;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 @media (min-width: 480px) {
   .show-mobile {
     display: none;
@@ -898,5 +915,11 @@ section.news-section h2 {
 
   .hide-mobile {
     display: block;
+  }
+
+  .service-content {
+    img {
+      width: 300px;
+    }
   }
 }
