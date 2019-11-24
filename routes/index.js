@@ -4,7 +4,7 @@ var axios = require('axios');
 
 router.get('/', (req, res, next) => {
   axios.get(
-    `http://blog.andywilko.com/ghost/api/v2/content/posts/?key=53a6a6e62dbce88a8a693e6d7b`
+    `https://blog.jonesandwilkinson.co.uk/ghost/api/v2/content/posts/?key=53a6a6e62dbce88a8a693e6d7b`
   ).then(response => {
 
     let latestPosts = response.data.posts.slice(0, 3).map((el) => {

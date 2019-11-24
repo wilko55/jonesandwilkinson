@@ -8,6 +8,8 @@ var routes = require('./routes');
 
 var app = express();
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
 app.set('views', path.join(__dirname, 'views'));
 var exphbs  = require('express-handlebars');
 var hbs = exphbs.create({
