@@ -78,4 +78,4 @@ sw.*
 # Vim swap files
 *.swp
 
-public/css/*
+public/

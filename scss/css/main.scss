@@ -501,13 +501,13 @@ section.news-section h2 {
   }
 
   .hero-text h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 400;
     margin: 0;
   }
 
   .hero-text h2.italic {
-    font-size: 2.6rem;
+    font-size: 3.2rem;
     font-style: italic;
     margin: 0;
   }
@@ -627,6 +627,19 @@ section.news-section h2 {
 
   .title-wrapper h1 {
     font-size: 6.5rem;
+    margin-left: 50px;
+  }
+
+  .hero-text h2 {
+    font-size: 6.5rem;
+    font-weight: 400;
+    margin: -50px 0 0 0;
+  }
+
+  .hero-text h2.italic {
+    font-size: 4rem;
+    font-style: italic;
+    margin: 0;
   }
 }
 
@@ -644,7 +657,12 @@ section.news-section h2 {
   }
 }
 
-
+@media (min-width: 1248px) {
+  .title-wrapper h1 {
+    font-size: 8rem;
+    margin-left: 100px;
+  }
+}
 
 
 .hero-image {
